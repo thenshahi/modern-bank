@@ -8,13 +8,12 @@ const Clients = () => (
 			{clients.map((client) => (
 				<div
 					key={client.id}
-					className={`flex-1 ${styles.flexCenter} sm:min-w-[192px] min-w-[120px]`}
+					className={`flex-1 ${styles.flexCenter} sm:min-w-[192px] min-w-[120px] `}
 				>
-					{/* TO DO: make it so hovering over these images highlights in white*/}
 					<img
 						src={client.logo}
 						alt="clients"
-						className="sm:w-[192px] w-[100px] object-contain"
+						className="sm:w-[192px] w-[100px] object-contain hover:opacity-50"
 					/>
 				</div>
 			))}
